@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#111111">
+<link rel="manifest" href="manifest.json">
+<title>Block Island Fire Number Navigator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="title">Block Island Fire Number Navigator</div>
+  <div class="subtitle">Offline fire-number lookup</div>
+</header>
+<section id="panel">
+  <input id="q" inputmode="numeric" placeholder="Enter fire number, e.g. 904" autocomplete="off">
+  <button id="searchBtn">Search</button>
+  <button id="gpsBtn">GPS</button>
+</section>
+<div id="result"></div>
+<canvas id="map"></canvas>
+<div id="hint">Drag to move • pinch or use +/- to zoom</div>
+<div id="zoom">
+  <button id="plus">+</button>
+  <button id="minus">−</button>
+</div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
